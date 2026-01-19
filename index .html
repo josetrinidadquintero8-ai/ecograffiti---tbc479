@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-graffiti | Toluca</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        :root {
+            --color-principal: #2ECC71;
+            --color-secundario: #E67E22;
+            --color-oscuro: #2C3E50;
+            --color-claro: #ECF0F1;
+        }
+
+        body {
+            background-color: var(--color-claro);
+            color: var(--color-oscuro);
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1565060810361-faf5e4952ce5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-principal);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            background-color: var(--color-secundario);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #D35400;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: var(--color-principal);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--color-secundario);
+            padding-bottom: 0.5rem;
+        }
+
+        .contenedor-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .tarjeta {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .tarjeta h3 {
+            color: var(--color-secundario);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .perfil-artista img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #mapa {
+            width: 100%;
+            height: 300px;
+            background-color: #BDC3C7;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        form {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #BDC3C7;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: var(--color-oscuro);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .redes a {
+            color: var(--color-principal);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Página de Inicio -->
+    <header>
+        <h1>Eco-graffiti</h1>
+        <p>Gestión Cultural como Necesidad Social y Ambiental en Toluca</p>
+        <a href="#participar" class="btn">Únete al Proyecto</a>
+    </header>
+
+    <!-- Sobre el Proyecto -->
+    <section id="sobre">
+        <h2>Sobre el Proyecto</h2>
+        <div class="contenedor-flex">
+            <div class="tarjeta">
+                <h3>Necesidad que Atendemos</h3>
+                <p>Transformamos espacios públicos y baldíos abandonados o contaminados en la ciudad de Toluca, dándoles una nueva vida con arte y cuidado ambiental.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Raíces Locales</h3>
+                <p>Basados en tradiciones como los honores a San Isidro, las fiestas de Santa Ana y el Carnaval del Señor de la Columna, fusionamos cultura local con arte urbano.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Nuestro Objetivo</h3>
+                <p>Dar una segunda oportunidad a espacios infrautilizados: limpiándolos, usando arte urbano para darles color y vida, y mejorando la imagen del barrio.</p>
+            </div>
+        </div>
+
+        <h2>Equipo de Artistas</h2>
+        <div class="contenedor-flex">
+            <div class="tarjeta perfil-artista">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="Artista urbano">
+                <h3>Luis Dreok</h3>
+                <p>Especializado en graffiti realista.</p>
+            </div>
+            <div class="tarjeta perfil-artista">
+                <img src="https://images.unsplash.com/photo-1534531173927-aeb928d53916?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="Artista urbano">
+                <h3>Crayola Morales</h3>
+                <p>Experto en técnicas de pintura urbana sostenible y participación comunitaria.</p>
+            </div>
+            <div class="tarjeta perfil-artista">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="Artista urbano">
+                <h3>Steelmaster</h3>
+                <p>Creador de murales que integran elementos de la tradición toluca con estilos modernos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actividades -->
+    <section id="actividades">
+        <h2>Actividades</h2>
+        <div class="tarjeta">
+            <h3>Campañas de Limpieza + Graffiti</h3>
+            <p>Juntamos a vecinos y artistas para limpiar espacios seleccionados y darles un nuevo aspecto con murales temáticos. Estos espacios se prepararán para futuros proyectos sociales.</p>
+            <p><strong>Espacios planeados:</strong> Lotes en colonias centro y norte de Toluca (ver mapa a continuación).</p>
+        </div>
+
+        <h2>Ubicación de Proyectos</h2>
+        <div id="mapa">
+            <p>Mapa interactivo con los espacios seleccionados (próximamente).<br>Zonas objetivo: Colonias con tradiciones agrícolas y espacios abandonados.</p>
+        </div>
+    </section>
+
+    <!-- Cómo Participar -->
+    <section id="participar">
+        <h2>Cómo Participar</h2>
+        <div class="contenedor-flex">
+            <div class="tarjeta">
+                <h3>Para Vecinos</h3>
+                <p>Únete a nuestras campañas de limpieza: consulta los horarios y puntos de encuentro en nuestras redes sociales.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Para Artistas</h3>
+                <p>Envía tu portafolio y propuesta de mural a través del formulario de contacto para colaborar con nosotros.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Para Colaboradores</h3>
+                <p>Aporta materiales (pinceles, rodillos, pinturas ecológicas) o realiza donaciones financieras a través de nuestras plataformas aliadas.</p>
+                <p><strong>Materiales necesarios:</strong> Pinceles, recolectores, esmaltes, camión de basura.</p>
+            </div>
+        </div>
+
+        <h2>Contacto y Colaboraciones</h2>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <select>
+                <option value="">Tipo de participación o consulta</option>
+                <option value="vecino">Quiero unirme como vecino</option>
+                <option value="artista">Quiero colaborar como artista</option>
+                <option value="colaborador">Quiero aportar materiales o donaciones</option>
+                <option value="otro">Otra consulta</option>
+            </select>
+            <textarea rows="4" placeholder="Escribe tu mensaje o propuesta" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Eco-graffiti Toluca © 2026 | Gestión Cultural y Ambiental</p>
+        <div class="redes">
+            <a href="#">📱 Facebook</a>
+            <a href="#">📸 Instagram</a>
+            <a href="#">🎥 TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
